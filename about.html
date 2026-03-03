@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | St. Peter's Kyasioni Primary School</title>
+
+<!-- Open Sans Font -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+schoolGreen: '#166534',
+schoolMaroon: '#800000',
+schoolGold: '#facc15'
+},
+fontFamily: {
+school: ['Open Sans', 'sans-serif']
+}
+}
+}
+}
+</script>
+</head>
+
+<body class="bg-gray-50 font-school">
+
+<!-- Navigation -->
+<nav class="bg-schoolMaroon sticky top-0 z-50 shadow-md">
+<div class="container mx-auto px-6">
+<div class="flex justify-between items-center h-20 text-white">
+
+<div>
+<h1 class="text-xl font-bold tracking-wide">
+ST. PETER'S KYASIONI PRIMARY SCHOOL
+</h1>
+<p class="text-xs text-white/80 font-light">
+Empowering Young Minds
+</p>
+</div>
+
+<div class="hidden lg:flex space-x-8 font-semibold">
+<a href="index.html" class="hover:text-schoolGold transition">Home</a>
+<a href="about.html" class="text-schoolGold">About</a>
+<a href="staff.html" class="hover:text-schoolGold transition">Staff</a>
+<a href="students.html" class="hover:text-schoolGold transition">Students</a>
+<a href="contacts.html" class="hover:text-schoolGold transition">Contact</a>
+</div>
+
+<button id="menuBtn" class="lg:hidden text-2xl text-white">
+☰
+</button>
+
+</div>
+</div>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="hidden lg:hidden bg-schoolMaroon border-t border-white/20">
+<div class="px-6 py-4 space-y-3 text-white">
+<a href="index.html" class="block">Home</a>
+<a href="about.html" class="block text-schoolGold font-semibold">About</a>
+<a href="staff.html" class="block">Staff</a>
+<a href="students.html" class="block">Students</a>
+<a href="contacts.html" class="block">Contact</a>
+</div>
+</div>
+</nav>
+
+<!-- Hero -->
+<section class="bg-schoolMaroon text-white py-20 text-center">
+<h1 class="text-5xl font-bold mb-4">About Us</h1>
+<p class="text-lg font-light">
+Learn more about our mission, vision and values
+</p>
+</section>
+
+<!-- Content -->
+<section class="py-20 container mx-auto px-6 max-w-6xl">
+    <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Mission Card -->
+        <div class="bg-white rounded-xl shadow-xl overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl border-t-4 border-schoolMaroon">
+            <div class="p-8 text-center">
+                <div class="w-16 h-16 bg-schoolMaroon/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-schoolMaroon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold text-schoolMaroon mb-4">Our Mission</h2>
+                <p class="text-gray-600 leading-relaxed">
+                <b>  Educating Our Students With Value Based On Traditional Christian Ethics</b>
+                </p>
+            </div>
+            <div class="h-2 bg-schoolMaroon"></div>
+        </div>
+
+        <!-- Vision Card -->
+        <div class="bg-white rounded-xl shadow-xl overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl border-t-4 border-schoolGold">
+            <div class="p-8 text-center">
+                <div class="w-16 h-16 bg-schoolGold/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-schoolGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold text-schoolMaroon mb-4">Our Vision</h2>
+                <p class="text-gray-600 leading-relaxed">
+                   <b>To Provide The Best Education For Every Individual Child In Stimulating Learning Environment So That Every Child Not Only Realizes And Achieves Their Potential But Exceeds It</b>
+                </p>
+            </div>
+            <div class="h-2 bg-schoolGold"></div>
+        </div>
+
+        <!-- Core Values Card -->
+        <div class="bg-white rounded-xl shadow-xl overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl border-t-4 border-schoolGreen">
+            <div class="p-8 text-center">
+                <div class="w-16 h-16 bg-schoolGreen/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-schoolGreen" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold text-schoolMaroon mb-4">Core Values</h2>
+                <ul class="text-gray-600 space-y-2 text-left inline-block">
+                    <li class="flex items-center"><span class="w-2 h-2 bg-schoolGreen rounded-full mr-3"></span><b>Integrity</b></li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-schoolGreen rounded-full mr-3"></span><b>Respect</b></li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-schoolGreen rounded-full mr-3"></span><b>Communication</b></li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-schoolGreen rounded-full mr-3"></span><b>Excellence</b></li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-schoolGreen rounded-full mr-3"></span><b>Responsibility</b></li>
+                </ul>
+            </div>
+            <div class="h-2 bg-schoolGreen"></div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-schoolGreen text-white py-8 text-center">
+© 2026 St. Peter's Kyasioni Primary School. All Rights Reserved.
+</footer>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Staff - School Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        schoolMaroon: "#800000",
+                        schoolGold: "#FFD700"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-100">
+
+<!-- NAVIGATION -->
+<nav class="bg-schoolMaroon text-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        
+        <div class="text-2xl font-bold">
+            My School
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex space-x-8 items-center font-semibold">
+            <a href="index.html" class="hover:text-schoolGold transition">Home</a>
+            <a href="about.html" class="hover:text-schoolGold transition">About</a>
+            <a href="staff.html" class="text-schoolGold">Staff</a>
+            <a href="students.html" class="hover:text-schoolGold transition">Students</a>
+            <a href="contacts.html" class="hover:text-schoolGold transition">Contact</a>
+
+            <!-- Admin Button -->
+            <a href="http://127.0.0.1:5000/" 
+               class="bg-schoolGold text-schoolMaroon px-4 py-2 rounded-lg font-bold hover:bg-yellow-400 transition">
+               Admin
+            </a>
+        </div>
+
+        <!-- Mobile Button -->
+       <button id="menuBtn" class="lg:hidden text-2xl text-white">
+☰
+</button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-schoolMaroon">
+        <div class="px-6 py-4 space-y-3 text-white font-semibold">
+            <a href="index.html" class="block hover:text-schoolGold">Home</a>
+            <a href="about.html" class="block hover:text-schoolGold">About</a>
+            <a href="staff.html" class="block text-schoolGold">Staff</a>
+            <a href="students.html" class="block hover:text-schoolGold">Students</a>
+            <a href="contacts.html" class="block hover:text-schoolGold">Contact</a>
+
+            <!-- Admin Button Mobile -->
+            <a href="http://127.0.0.1:5000/" 
+               class="block bg-schoolGold text-schoolMaroon px-4 py-2 rounded-lg font-bold text-center">
+               Admin
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="bg-schoolMaroon text-white text-center py-20">
+    <h1 class="text-4xl md:text-5xl font-bold">Meet Our Dedicated Staff</h1>
+    <p class="mt-4 text-lg font-light">
+        Professional Educators Guiding Our Learners Towards Excellence
+    </p>
+
+    
+</section>
+
+<!-- STAFF CONTENT -->
+<!-- STAFF CONTENT -->
+<section class="max-w-6xl mx-auto py-16 px-6">
+    <div class="grid md:grid-cols-3 gap-10">
+
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+            <div class="h-56 w-full overflow-hidden">
+                <img src="https://image2url.com/r2/default/images/1772536171145-29aee667-889c-49d9-b611-94f1a6037b13.jpeg"
+                     class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+            <div class="h-56 w-full overflow-hidden">
+                <img src="https://image2url.com/r2/default/images/1772536098001-e844c326-d564-469c-9700-98c876a76a4e.jpeg"
+                     class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+            <div class="h-56 w-full overflow-hidden">
+                <img src="https://image2url.com/r2/default/images/1772536357941-36a94143-ab70-4e17-adf1-81d20cfcc116.jpeg"
+                     class="w-full h-full object-cover">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Additional Staff Grid -->
+<section class="pb-20 max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-schoolMaroon text-center mb-12">
+        Our Teaching Team
+    </h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+            <div class="h-48 w-full overflow-hidden">
+                <img src="https://image2url.com/r2/default/images/1772532464537-e84436ec-d946-4ee5-a59f-14ba87ffd438.jpeg"
+                     class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+            <div class="h-48 w-full overflow-hidden">
+                <img src="https://image2url.com/r2/default/images/1772532667981-2d8402e2-3918-4936-b30d-e8f0a4e6443b.jpeg"
+                     class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+            <div class="h-48 w-full overflow-hidden">
+                <img src="https://image2url.com/r2/default/images/1772533065642-12271332-ff5b-4a75-b060-b0381db0511d.jpeg"
+                     class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+            <div class="h-48 w-full overflow-hidden">
+                <img src="https://image2url.com/r2/default/images/1772534537670-e00c5ae8-d6a1-4483-8e2e-186d922b70ef.jpeg"
+                     class="w-full h-full object-cover">
+            </div>
+        </div>
+
+    </div>
+</section>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="bg-schoolMaroon text-white text-center py-6">
+    <p>&copy; 2026 My School. All rights reserved.</p>
+</footer>
+
+<!-- Mobile Menu Script -->
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+});
+</script>
+
+</body>
+</html>

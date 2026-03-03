@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | St. Peter's Kyasioni Primary School</title>
+
+<!-- Open Sans Font -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+schoolGreen: '#166534',
+schoolMaroon: '#800000',
+schoolGold: '#facc15'
+},
+fontFamily: {
+school: ['Open Sans', 'sans-serif']
+}
+}
+}
+}
+</script>
+</head>
+
+<body class="bg-gray-50 font-school">
+
+<nav class="bg-schoolMaroon sticky top-0 z-50 shadow-md">
+<div class="container mx-auto px-6">
+<div class="flex justify-between items-center h-20 text-white">
+
+<div>
+<h1 class="text-xl font-bold tracking-wide">
+ST. PETER'S KYASIONI PRIMARY SCHOOL
+</h1>
+</div>
+
+<div class="hidden lg:flex space-x-8 font-semibold">
+<a href="index.html" class="hover:text-schoolGold">Home</a>
+<a href="about.html" class="hover:text-schoolGold">About</a>
+<a href="staff.html" class="hover:text-schoolGold">Staff</a>
+<a href="students.html" class="hover:text-schoolGold">Students</a>
+<a href="contacts.html" class="text-schoolGold">Contact</a>
+</div>
+
+<button id="menuBtn" class="lg:hidden text-2xl text-white">
+☰
+</button>
+
+</div>
+</div>
+
+<div id="mobileMenu" class="hidden lg:hidden bg-schoolMaroon border-t border-white/20">
+<div class="px-6 py-4 space-y-3 text-white">
+<a href="index.html" class="block">Home</a>
+<a href="about.html" class="block">About</a>
+<a href="staff.html" class="block">Staff</a>
+<a href="students.html" class="block">Students</a>
+<a href="contacts.html" class="block text-schoolGold font-semibold">Contact</a>
+</div>
+</div>
+</nav>
+
+<section class="bg-schoolMaroon text-white py-20 text-center">
+<h1 class="text-5xl font-bold">Contact Us</h1>
+<p class="mt-4 text-lg font-light">We would love to hear from you</p>
+</section>
+
+<section class="py-20 container mx-auto px-6 max-w-3xl">
+<div class="bg-white shadow-lg rounded-xl p-8 space-y-6">
+
+<p class="text-gray-700">
+<strong>Location:</strong> Kyasioni, Matuu, Kenya
+</p>
+
+<p class="text-gray-700">
+<strong>Phone:</strong> 0721 815 761
+</p>
+
+<form class="space-y-4">
+<input type="text" placeholder="Your Name"
+class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-schoolMaroon">
+
+<input type="email" placeholder="Your Email"
+class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-schoolMaroon">
+
+<textarea rows="4" placeholder="Your Message"
+class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-schoolMaroon"></textarea>
+
+<button class="bg-schoolMaroon text-white px-6 py-3 rounded-lg hover:bg-[#5c0000] transition transform hover:scale-105">
+Send Message
+</button>
+</form>
+
+</div>
+</section>
+
+<footer class="bg-schoolGreen text-white py-8 text-center">
+© 2026 St. Peter's Kyasioni Primary School. All Rights Reserved.
+</footer>
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+});
+</script>
+
+</body>
+</html>

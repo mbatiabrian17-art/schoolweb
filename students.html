@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Students | St. Peter's Kyasioni Primary School</title>
+
+<!-- Open Sans Font -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+schoolGreen: '#166534',
+schoolMaroon: '#800000',
+schoolGold: '#facc15'
+},
+fontFamily: {
+school: ['Open Sans', 'sans-serif']
+}
+}
+}
+}
+</script>
+</head>
+
+<body class="bg-gray-50 font-school">
+
+<!-- Navigation -->
+<nav class="bg-schoolMaroon sticky top-0 z-50 shadow-md">
+<div class="container mx-auto px-6">
+<div class="flex justify-between items-center h-20 text-white">
+
+<div>
+<h1 class="text-xl font-bold tracking-wide">
+ST. PETER'S KYASIONI PRIMARY SCHOOL
+</h1>
+</div>
+
+<div class="hidden lg:flex space-x-8 font-semibold">
+<a href="index.html" class="hover:text-schoolGold transition">Home</a>
+<a href="about.html" class="hover:text-schoolGold transition">About</a>
+<a href="staff.html" class="hover:text-schoolGold transition">Staff</a>
+<a href="students.html" class="text-schoolGold">Students</a>
+<a href="contacts.html" class="hover:text-schoolGold transition">Contact</a>
+</div>
+
+<button id="menuBtn" class="lg:hidden text-2xl text-white">
+☰
+</button>
+
+</div>
+</div>
+
+<div id="mobileMenu" class="hidden lg:hidden bg-schoolMaroon border-t border-white/20">
+<div class="px-6 py-4 space-y-3 text-white">
+<a href="index.html" class="block">Home</a>
+<a href="about.html" class="block">About</a>
+<a href="staff.html" class="block">Staff</a>
+<a href="students.html" class="block text-schoolGold font-semibold">Students</a>
+<a href="contacts.html" class="block">Contact</a>
+</div>
+</div>
+</nav>
+
+<section class="bg-schoolMaroon text-white py-20 text-center">
+<h1 class="text-5xl font-bold">Our Students</h1>
+<p class="mt-4 text-lg font-light">Nurturing Excellence Through CBC Education</p>
+</section>
+
+<!-- Photo Gallery Section -->
+<section class="py-16 container mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-6 mb-12">
+        <div class="relative group overflow-hidden rounded-xl shadow-lg h-64">
+            <img src="https://image2url.com/r2/default/images/1772488109601-c8b05fbc-7ccf-434e-9c41-9236adbdcf4e.jpeg"  class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-schoolMaroon/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+            </div>
+        </div>
+        <div class="relative group overflow-hidden rounded-xl shadow-lg h-64">
+            <img src="https://image2url.com/r2/default/images/1772488156933-c693aa6f-4c7b-4896-9c6a-69d1121cf363.jpeg" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-schoolMaroon/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+               
+            </div>
+        </div>
+        <div class="relative group overflow-hidden rounded-xl shadow-lg h-64">
+            <img src="https://image2url.com/r2/default/images/1772488198123-098bdb8c-d261-45fb-977e-d08be70e79a8.jpeg"  class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-schoolMaroon/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 container mx-auto px-6 max-w-4xl text-center">
+<p class="text-lg text-gray-700 mb-6 leading-relaxed">
+We follow the Competency-Based Curriculum (CBC) and offer comprehensive Junior Secondary education designed to equip learners with knowledge, skills, values and competencies for lifelong success.
+</p>
+
+<p class="text-lg text-gray-700 leading-relaxed">
+Students actively participate in co-curricular activities including football, volleyball, handball and netball among others, promoting teamwork, discipline and physical fitness.
+</p>
+</section>
+
+<footer class="bg-schoolGreen text-white py-8 text-center">
+© 2026 St. Peter's Kyasioni Primary School. All Rights Reserved.
+</footer>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+});
+</script>
+
+</body>
+</html>
